@@ -12,3 +12,4 @@
     3) Use the AT commands for the lora module (AT+ADDRESS=0  AT+NETWORKID = 0 AT+BAND=915000000 AT+PARAMETER=12,4,1,7 AT+IPR=9600). 
           - I used 9600 BAUD as at the higher 115200 which should be supported, I was loosing a lot of data. Still have to figure out why, but 9600 immediatly resolved all issues. 
   
+Relies on Adafruit bme280, TinyGPSPlus, SoftwareSerial, Wire.
