@@ -4,7 +4,8 @@
  This current code works for ESPwroom32 dev board, but can be adapted to any board. It relies on I2C and SoftwareSerial to communicate with a REYAX Lora module, GoouuuTech GT -U7 gps module, and BME280.
  The code is set so that you just have to uncomment rocket,basestation, or intermediary node and the code will work. Make sure to create a new node id for each node on your network, starting from 0 up to numNodes (exclusive). I will change this to rely on mac address written to eeprom in the future.
 
- Configure the pins to your setup. The names should be explanitory.
+ Configure the pins to your setup. The names should be explanitory. displayEnabled, bmeEnabled, gpsEnabled, and debugPrints are all macros that configure the code on uploading. Comment or change these to each node 
+ to work for your physical requirements. 
  
  To set up the Lora Module:
     1) Make a new file and set Rx/Tx pins to input(or make a softwareserial).
